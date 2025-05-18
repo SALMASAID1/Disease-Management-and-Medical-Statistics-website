@@ -73,3 +73,10 @@ MedicalWeb is a web application designed to manage patient medical records, appo
 *   **Frontend**: HTML, CSS, JavaScript
 *   **Database**: MySQL
 *   **Charting**: Google Charts (as seen in [`src/hospitalStatisticsPage.html`](MedicalWeb/src/hospitalStatisticsPage.html) and `js` files)
+
+
+
+  ## Contributors
+- TAMZIRT MOHAMED
+- SAID SALMA
+
