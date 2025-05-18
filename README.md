@@ -77,6 +77,6 @@ MedicalWeb is a web application designed to manage patient medical records, appo
 
 
   ## Contributors
-- TAMZIRT MOHAMED
 - SAID SALMA
+- TAMZIRT MOHAMED
 
