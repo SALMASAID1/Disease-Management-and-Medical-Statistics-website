@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>hospital statistics</title>
+    <link rel="stylesheet" href="../css/charts.css" />
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script> -->
+    <!-- <script src="../js/chartHostpitalAgeDistribution.js" defer></script> -->
+    <!-- <script src="../js/chartHostpitalBloodDistribution.js"  defer></script> -->
+
+    <script
+      type="text/javascript"
+      src="https://www.gstatic.com/charts/loader.js"
+    ></script>
+    <script type="text/javascript" src="../js/AgeDistributionChart.js"></script>
+    <script type="text/javascript" src="../js/BloodDistribution.js"></script>
+    <script type="text/javascript" src="../js/AppointmentChart.js"></script>
+    <script type="text/javascript" src="../js/DiagnosticsLast7days.js"></script>
+
+  </head>
+  <body>
+
+    <div class="containerCharts">
+      <h3 >Age Distribution in the hospital</h3>
+      <div class="AgeDistributionChart" id="AgeDistribution"></div>
+    </div>
+
+    <div class="containerCharts">
+      <h3 >Blood Distribution</h3>
+      <div class="BloodDistributionChart" id="BloodDistribution"></div>
+    </div>
+
+    <div class="containerCharts">
+      <h3 >Appointments in the Next 7 Days</h3>
+      <div class="appointmentDateChart" id="appointmentDate"></div>
+    </div>
+
+    <div class="containerCharts">
+      <h3 >Most Common Diagnoses in the Last 7 Days</h3>
+      <div class="DiagnosticsLast7daysChart" id="DiagnosticsLast7days"></div>
+    </div>
+
+  </body>
+</html>

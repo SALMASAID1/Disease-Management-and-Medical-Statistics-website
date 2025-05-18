@@ -1,0 +1,241 @@
+body {
+  gap: 57px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+  margin: 0;
+  height: 100%;
+  flex-direction: row;
+  background: #c8e2f4;
+  background-image: url("../assests/imagesPatientsRecords/recordsBg.jpg");
+  background-size: cover;
+}
+
+.backgroundImage {
+  position: relative;
+}
+
+.container-search-section {
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding: 0;
+  margin: 0;
+  border: 2px solid;
+  top: 117px;
+  /* align-items: center; */
+  height: 500px;
+  align-items: center;
+  border-radius: 18px;
+  background: #001865;
+}
+
+.imageContainer {
+  position: relative;
+  width: 384px;
+  display: flex;
+  justify-content: center;
+  /* border: 2px solid; */
+  padding: 5px;
+}
+.imageContainer img {
+  position: relative;
+  width: 270px;
+  bottom: 16px;
+}
+
+.fieldsetPatient {
+  position: relative;
+  top: -7px;
+  border: 3px solid;
+  display: flex;
+  flex-direction: column;
+  border-radius: 6px;
+}
+.fieldsetPatient:hover {
+  transform: scale(1.1);
+}
+
+.fieldsetPatient > legend {
+  color: #ffffff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.fieldsetPatient label {
+  padding-top: 4px;
+  color: #ffffff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.CINLable {
+  position: relative;
+  left: 15px;
+}
+
+.inputContainer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  gap: 97px;
+}
+
+.inputFieldsCIN {
+  position: relative;
+  margin-bottom: 16px;
+  right: 59px;
+  height: 25px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.submit {
+  position: relative;
+  width: 117px;
+  /* display: flex;
+  justify-content: center; */
+  /* align-items: center; */
+  left: 128px;
+  /* margin: 0; */
+  height: 17px;
+  font-size: 20px;
+  text-align: center;
+  /* padding: 0; */
+  background: #000000;
+  border-radius: 15px;
+  color: #ffff;
+  font-family: fantasy;
+  padding-bottom: 32px;
+  cursor: pointer;
+}
+.submit:hover {
+  transform: scaleX(1.1);
+}
+
+.inputFieldsDATE {
+  position: relative;
+  /* margin: 10px 0; */
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  right: 73px;
+  width: 164px;
+  height: 27px;
+  border-radius: 8px;
+}
+
+.error-message {
+  background-color: #fee2e2;
+  color: #b91c1c;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  font-size: 14px;
+  text-align: center;
+  display: none;
+}
+
+@media screen and (max-width: 650px) {
+  body {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    margin: 0;
+    height: 100%;
+    right: 26px;
+  }
+  .backgroundImage {
+    width: 0;
+  }
+  .container-search-section {
+    width: 317px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    border: 2px solid;
+    /* align-items: center;*/
+    height: 398px;
+    /* padding-top: 47px; */
+    align-items: center;
+    left: 24px;
+  }
+  .imageContainer {
+    position: relative;
+    width: 231px;
+    display: flex;
+    justify-content: center;
+    /* border: 2px solid; */
+  }
+  .imageContainer img {
+    width: 200px;
+    position: relative;
+    left: 24px;
+  }
+
+  .fieldsetPatient {
+    position: relative;
+    top: -7px;
+    border: 3px solid;
+    display: flex;
+    flex-direction: column;
+  }
+  .fieldsetPatient > legend {
+    color: #ffffff;
+    font-size: 16px;
+  }
+
+  .submit {
+    position: relative;
+    width: 117px;
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    left: 97px;
+    /* margin: 0; */
+    height: 17px;
+    font-size: 20px;
+    text-align: center;
+    /* padding: 0; */
+    background: #000000;
+    border-radius: 15px;
+    color: #ffff;
+    font-family: fantasy;
+    padding-bottom: 32px;
+    cursor: pointer;
+  }
+
+  .inputContainer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    padding: 0;
+    /* margin: 0;*/
+  }
+
+  .inputFieldsCIN {
+    position: relative;
+    margin-bottom: 16px;
+    right: -7px;
+    height: 25px;
+  }
+
+  .inputFieldsDATE {
+    position: relative;
+    /* margin: 10px 0; */
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    right: 8px;
+    width: 164px;
+    height: 27px;
+  }
+}

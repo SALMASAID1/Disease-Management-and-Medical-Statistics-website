@@ -1,0 +1,396 @@
+/* Base styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, sans-serif;
+  background-color: #eef2f7;
+}
+
+/* Header styles */
+.header {
+  background-color: #1e40af;
+  color: white;
+  padding: 16px 32px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header a {
+  text-decoration: none;
+}
+
+.header-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page-title {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.search-bar {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.search-bar input {
+  padding: 8px 12px;
+  border-radius: 4px;
+  border: none;
+  min-width: 250px;
+}
+
+#cinSearch {
+  flex: 2;
+  padding: 8px 12px;
+  border-radius: 4px;
+  border: none;
+}
+
+#dateSearch {
+  flex: 1;
+  padding: 8px 12px;
+  border-radius: 4px;
+  border: none;
+}
+
+.search-btn {
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.search-btn:hover {
+  background-color: #2563eb;
+}
+
+.new-search-btn {
+  background-color: #4f46e5;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.2s;
+  text-decoration: none;
+  display: inline-block;
+  margin-left: 8px;
+}
+
+.new-search-btn:hover {
+  background-color: #4338ca;
+}
+
+/* Add this to your existing CSS */
+.link-back {
+  color: white;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  font-weight: 500;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.link-back:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-1px);
+}
+
+/* Optional: Add an icon to the link */
+.link-back:before {
+  content: "←";
+  margin-right: 8px;
+}
+
+/* Layout and containers */
+.dashboard-container {
+  width: 100%;
+  padding: 0;
+  overflow-y: auto;
+  min-height: calc(100vh - 80px);
+  font-family: system-ui, -apple-system, sans-serif;
+  margin-top: 52px;
+}
+
+.dashboard-content {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 30px;
+  flex-direction: column;
+}
+
+/* Section divider */
+.section-divider {
+  position: relative;
+  text-align: center;
+  margin: 10px 0 20px;
+}
+
+.section-divider::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background-color: #cfd8e3;
+  z-index: 0;
+}
+
+.section-divider span {
+  position: relative;
+  background-color: #eef2f7;
+  padding: 0 12px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #64748b;
+  z-index: 1;
+}
+
+/* Patient information card */
+.patient-info-card {
+  background-color: white;
+  border-radius: 16px;
+  padding: 32px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+  border-top: 5px solid #3b82f6;
+}
+
+.patient-info-card:hover {
+  transform: translateY(-2px);
+}
+
+.section-title {
+  font-size: 28px;
+  margin-bottom: 24px;
+  color: #1e40af;
+  font-weight: 600;
+  border-bottom: 2px solid #e2e8f0;
+  padding-bottom: 12px;
+}
+
+.patient-info-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.info-column {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.info-field {
+  margin-bottom: 4px;
+}
+
+.field-label {
+  font-weight: 500;
+  color: #64748b;
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.field-value {
+  font-size: 16px;
+  color: #334155;
+  font-weight: 500;
+  background-color: #f8fafc;
+  padding: 8px 12px;
+  border-radius: 6px;
+  margin-top: 4px;
+}
+
+/* Treatment history card */
+.treatment-card {
+  background-color: white;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-top: 5px solid #22266c;
+}
+
+.treatment-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #22266c;
+  border-bottom: 2px solid #e2e8f0;
+  padding-bottom: 12px;
+}
+
+.treatment-summary {
+  margin-bottom: 30px;
+  background-color: #f8fafc;
+  padding: 24px;
+  border-radius: 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border-left: 4px solid #2563eb;
+}
+
+.visit-date {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.symptoms {
+  margin-bottom: 16px;
+}
+
+.bold-label {
+  font-weight: bold;
+}
+
+/* Medicines section */
+.medicines-section {
+  background-color: #ffffff;
+  padding: 24px;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  margin-top: 24px;
+}
+
+.medicines-title {
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+
+.medicines-grid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.medicine-card {
+  padding: 20px;
+  background-color: #f1f5f9;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  transition: all 0.2s ease;
+}
+
+.medicine-card:hover {
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.medicine-name {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.medicine-details {
+  background-color: white;
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 10px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.diagnostics {
+  margin-bottom: 16px;
+}
+
+/* Status message styles */
+.status-message {
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  font-weight: 500;
+  display: none;
+}
+
+.status-error {
+  background-color: #fee2e2;
+  color: #b91c1c;
+  border-left: 4px solid #ef4444;
+}
+
+.status-info {
+  background-color: #dbeafe;
+  color: #1e40af;
+  border-left: 4px solid #3b82f6;
+}
+
+.status-loading {
+  background-color: #f3f4f6;
+  color: #4b5563;
+  border-left: 4px solid #9ca3af;
+}
+
+/* Responsive styles */
+@media (max-width: 991px) {
+  .patient-info-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .search-bar {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  #cinSearch,
+  #dateSearch,
+  .search-btn {
+    width: 100%;
+    margin-bottom: 8px;
+  }
+
+  .header-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .page-title {
+    margin-bottom: 15px;
+  }
+
+  .new-search-btn {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 640px) {
+  .dashboard-container {
+    padding: 16px;
+  }
+
+  .patient-info-card {
+    padding: 16px;
+    border-radius: 8px;
+  }
+
+  .section-title {
+    font-size: 20px;
+    margin-bottom: 16px;
+  }
+
+  .medicines-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .medicine-card {
+    padding: 12px;
+  }
+}

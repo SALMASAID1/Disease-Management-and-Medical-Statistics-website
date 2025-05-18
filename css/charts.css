@@ -1,0 +1,90 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.AgeDistributionChart {
+  position: relative;
+  width: 900px;
+  max-width: 100%;
+  background: #f0fff0;
+  display: flex;
+  justify-content: center;
+  top: 1px;
+  /* border: 3px, solid, #000; */
+  left: 0;
+}
+
+.BloodDistributionChart {
+  position: relative;
+  width: 900px;
+  max-width: 100%;
+  background: #f0fff0;
+  display: flex;
+  justify-content: center;
+  top: 1px;
+  /* border: 3px, solid, #000; */
+  left: 0;
+}
+
+.appointmentDateChart {
+  position: relative;
+  width: 900px;
+  max-width: 100%;
+  background: #f0fff0;
+  display: flex;
+  justify-content: center;
+  top: 1px;
+  /* border: 3px, solid, #000; */
+  left: 0;
+}
+
+.chart-navigation {
+  text-align: center;
+  margin-top: 10px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.chart-navigation button {
+  padding: 10px 20px;
+  margin: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.chart-navigation button:hover {
+  background-color: #45a049;
+}
+
+.DiagnosticsLast7daysChart {
+  position: relative;
+  width: 900px;
+  max-width: 100%;
+  background: #f0fff0;
+  display: flex;
+  justify-content: center;
+  top: 1px;
+  /* border: 3px, solid, #000; */
+  left: 0;
+}
+
+.containerCharts {
+  position: relative;
+  width: 900px;
+  background: linear-gradient(135deg, #7392c0 0%, #c3cfe2 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  border: 3px solid;
+  margin: 100px 0;
+  font-size: 27px;
+}
